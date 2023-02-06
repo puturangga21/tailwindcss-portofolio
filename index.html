@@ -9,6 +9,52 @@
       <title>Portofolio | TailwindCSS</title>
    </head>
    <body>
+      <!-- Navbar Section -->
+      <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+         <div class="container">
+            <div class="flex items-center justify-between relative">
+               <div class="px-4">
+                  <a href="#home" class="font-bold text-primary text-lg block py-6">HaileeSteinfeld</a>
+               </div>
+               <div class="flex items-center px-4">
+                  <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                     <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                     <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                     <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                  </button>
+
+                  <nav
+                     id="nav-menu"
+                     class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                     <ul class="block lg:flex">
+                        <li class="group">
+                           <a href="#home" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Home</a>
+                        </li>
+                        <li class="group">
+                           <a href="#about" class="text-base text-dark py-2 mx-8 flex hover:text-primary">About Me</a>
+                        </li>
+                        <li class="group">
+                           <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                              >Portofolio</a
+                           >
+                        </li>
+                        <li class="group">
+                           <a href="#client" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Client</a>
+                        </li>
+                        <li class="group">
+                           <a href="#blog" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Blog</a>
+                        </li>
+                        <li class="group">
+                           <a href="#contact" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Contact</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Navbar Section End -->
+
       <!-- Hero Section -->
       <section id="home" class="pt-36">
          <div class="container">
@@ -63,7 +109,7 @@
                      Role.
                   </p>
                </div>
-               
+
                <div class="w-full px-4 lg:w-1/2">
                   <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Follow Me!</h3>
                   <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
@@ -88,7 +134,7 @@
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white hover:border-none transition-all">
                         <i class="bx bxl-youtube bx-sm"></i>
                      </a>
-                     
+
                      <a
                         href="https://twitter.com/HaileeSteinfeld"
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white hover:border-none transition-all">
@@ -100,5 +146,8 @@
          </div>
       </section>
       <!-- About Section End -->
+
+      <!-- Javascript -->
+      <script src="src/js/script.js"></script>
    </body>
 </html>
